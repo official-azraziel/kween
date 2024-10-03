@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are You ?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic">
+            <img src="logo.png" alt="Profile Picture" class="round-image">
+        </div>
+        <h1>Find Out Who You Are!</h1>
+        <p>Enter your details, then click submit.</p>
+        <form id="user-info">
+            <input type="text" id="fullName" placeholder="Full Name" required><br>
+            <input type="number" id="age" placeholder="Age" required><br>
+            <input type="text" id="zodiac" placeholder="Zodiac Sign" required><br>
+            <button type="button" onclick="startProcess()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Popup box with progress bar and status -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p id="popupMessage">Analyzing details...</p>
+            <div id="progressSection" class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <h2 id="resulthead" class="hidden result-head">You Are a <span style="color: #ff98c8;">Queen !</span></h2>
+            <img id="resultImage" src="kween.png" alt="Result" class="hidden result-image">
+            <p id="resultdetail" class="hidden result-detail">
+                <span style="color: #ff98c8; font-size: 35px; font-weight: bold;" >Smart & Pretty ˚ʚ♡ɞ˚</span><br>
+                You are like a queen, strong and graceful, leading with determination and focus.
+                Just as a queen governs her realm with wisdom and strength, zhian handles her 
+                responsibilities with tireless dedication.  zhian wears the crown of hard work, always striving 
+                for excellence, and never backing down from a challenge. Her strength lies in her 
+                perseverance, and her reign is one of kindness and success.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
